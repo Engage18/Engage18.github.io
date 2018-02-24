@@ -82,3 +82,11 @@ hr {
 #navbar .navButton {
 	border-bottom: 4px solid red;
 }
+
+body::-webkit-scrollbar {
+	width: .4em;
+}
+ 
+body::-webkit-scrollbar-thumb {
+	background-color: red;
+}
