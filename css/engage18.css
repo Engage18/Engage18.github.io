@@ -8,7 +8,7 @@ body {
 	margin: 0;
 }
 
-p {
+figcaption, p {
 	font-family: 'Roboto';
 	font-size: 16px;
 	color: #3a3a3a;
@@ -92,23 +92,17 @@ hr {
 	padding-top: 8em;
 }
 
-#thumbnailList {
-	max-width: 100%;
-    	list-style-type: none;
+#thumbnailHolder {
 	text-align: center;
-	float: center;
-	padding: 0;
-	margin: 0;
+	padding-bottom: 5em;
 }
 
-#thumbnailList li {
-	display: inline;
-	padding-left: 3em;
-	padding-right: 3em; 
-	float: center;
+#thumbnailHolder figure {
+	display: inline-block;
+	max-width: 20em;
 }
 
-#thumbnailList img {
+#thumbnailHolder img {
 	max-width: 15em;
 }
 
