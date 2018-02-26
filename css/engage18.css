@@ -83,6 +83,41 @@ hr {
 	border-bottom: 4px solid red;
 }
 
+#mainContent {
+	text-align: center;
+}
+
+#landscapeImage {
+	max-width: 50em;
+	padding-top: 8em;
+}
+
+#thumbnailList {
+	max-width: 100%;
+    	list-style-type: none;
+	text-align: center;
+	float: center;
+	padding: 0;
+	margin: 0;
+}
+
+#thumbnailList li {
+	display: inline;
+	padding-left: 3em;
+	padding-right: 3em; 
+	float: center;
+}
+
+#thumbnailList img {
+	max-width: 15em;
+}
+
+.textHolder {
+	max-width: 60em;
+	text-align: left;
+	margin: 0 auto;
+}
+
 body::-webkit-scrollbar {
 	width: .4em;
 }
@@ -90,3 +125,5 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
 	background-color: red;
 }
+
+
