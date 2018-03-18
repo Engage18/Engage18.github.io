@@ -1,11 +1,56 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Abel');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Adamina');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
 	margin: 0;
+}
+
+h1 {
+	font-family: Roboto Slab;
+	text-decoration: none;
+	margin: 0;
+}
+
+h5 {
+	font-family: Roboto;
+	color: rgba(26,26,26,.4);
+	font-size: 18px;
+	text-decoration: none;
+	margin: 0;
+}
+
+.bufferTop {
+	margin-top: 3em;
+}
+
+::selection {
+	background: none;
+}
+
+p::selection{
+	background:#ff623f;
+}
+
+figcaption::selection{
+	background:#ff623f;
+}
+
+figcaption a::selection{
+	background:#ff623f;
+	color: white;
+}
+
+p a::selection{
+	background:#ff623f;
+	color: white;
+}
+
+h1::selection {
+	background:#ff623f;
+}
+
+h5::selection {
+	background:#ff623f;
 }
 
 figcaption, p {
@@ -13,6 +58,16 @@ figcaption, p {
 	font-size: 16px;
 	color: #3a3a3a;
 	line-height: 150%;
+}
+
+figcaption a {
+	text-decoration: none;
+	color: #00a1ff;
+}
+
+p a {
+	text-decoration: none;
+	color: #00a1ff;
 }
 
 hr {
@@ -85,16 +140,22 @@ hr {
 
 #mainContent {
 	text-align: center;
+	padding-top: 8em;
+	padding-bottom: 5em;
 }
 
-#landscapeImage {
-	max-width: 50em;
-	padding-top: 8em;
+.widthLimiter {
+	max-width: 40em;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.landscapeImage {
+	max-width: 40em;
 }
 
 #thumbnailHolder {
 	text-align: center;
-	padding-bottom: 5em;
 }
 
 #thumbnailHolder figure {
@@ -112,6 +173,20 @@ hr {
 	margin: 0 auto;
 }
 
+.slideshowContainer ul {
+	list-style: none;
+}
+
+.slideshowContainer li {
+	text-align: center;
+}
+
+.slideshowContainer li img {
+	max-height: 20em;
+	display: none;
+	margin: 0 auto;
+}
+
 body::-webkit-scrollbar {
 	width: .4em;
 }
@@ -120,4 +195,33 @@ body::-webkit-scrollbar-thumb {
 	background-color: red;
 }
 
+.buttonHolder {
+	margin: 0 auto;
+	max-width: 10em;
+}
 
+.buttonHolder a:hover {
+	cursor: pointer; 
+}
+
+.prevButton {
+	float: left;
+}
+.nextButton {
+  float: right;
+}
+
+footer {
+	margin-top: 3em;
+	background-color: black;
+	color: white;
+	text-align: left;
+	padding-bottom: 5em;
+}
+
+h4 {
+	font-style: none;
+	font-family: Roboto;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+}
