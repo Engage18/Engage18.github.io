@@ -1,6 +1,10 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+input:focus {
+    outline:none;
+}
+
 body {
 	margin: 0;
 }
@@ -85,8 +89,8 @@ hr {
 
 #navbar {
 	background-color: white;
-    	list-style-type: none;
-    	overflow: hidden;
+    list-style-type: none;
+   	overflow: hidden;
 	text-align: right;
 	display: table;
 	height: 100%;
@@ -103,9 +107,9 @@ hr {
 
 #navbar li a {
 	color: black;
-    	padding: 1em 1em;
-    	text-decoration: none;
-    	font-family: 'Roboto Slab';
+   	padding: 1em 1em;
+    text-decoration: none;
+   	font-family: 'Roboto Slab';
 	font-size: 25px;
 	text-align: center;
 }
@@ -114,7 +118,7 @@ hr {
 	height: 75px;
 	max-width: 100%;
 	float: left;
-    	padding: 5px 5px;
+    padding: 5px 5px;
 	text-align: left;
 }
 
@@ -136,6 +140,60 @@ hr {
 
 #navbar .navButton {
 	border-bottom: 4px solid red;
+}
+
+#stanceWrapper {
+	height: 75px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#policyStances {
+	background-color: white;
+    list-style-type: none;
+   	overflow: hidden;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+#policyStances li {
+	text-align: center;
+	display: inline;
+	height: 75px;
+}
+
+#policyStances li button {
+	font-size: 25px;
+   	font-family: 'Roboto Slab';
+	text-align: center;
+	color: black;
+}
+
+.padSides {
+	padding: 0em, 1em;
+}
+
+#policyStances button:hover {
+	background-color: #efefef;
+}
+
+.stanceButton {
+	height: 100%;
+	background-color: white;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 4px solid red;
+}
+
+.selectedStanceButton {
+	border-bottom: 4p solid blue;
+}
+
+#takeAStand {
+	margin-top: 1em;
 }
 
 #mainContent {
