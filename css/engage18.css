@@ -199,7 +199,8 @@ hr {
 #mainContent {
 	text-align: center;
 	padding-top: 8em;
-	padding-bottom: 5em;
+	max-width: 80%;
+	margin: 0 auto;
 }
 
 #mainContent li {
@@ -221,6 +222,7 @@ hr {
 
 #thumbnailHolder {
 	text-align: center;
+	padding-bottom: 5em;
 }
 
 #thumbnailHolder figure {
