@@ -172,7 +172,7 @@ hr {
 }
 
 .padSides {
-	padding: 0em, 1em;
+	padding: 0em, 1em !important;
 }
 
 #policyStances button:hover {
