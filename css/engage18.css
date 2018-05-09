@@ -189,6 +189,20 @@ hr {
 	border-bottom: 4p solid blue;
 }
 
+.stanceDescriptions {
+	text-decoration: none;
+	list-style: none;
+	display: none;
+}
+
+.stanceDescriptions > li {
+	border: 3px solid blue;
+}
+
+.stanceDescriptions > li > ul {
+	padding: 30px 30px 30px 40px;
+}
+
 #takeAStand {
 	margin-top: 1em;
 }
