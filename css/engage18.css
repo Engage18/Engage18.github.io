@@ -143,28 +143,25 @@ hr {
 }
 
 #stanceWrapper {
-	height: 75px;
-	margin: 0;
-	padding: 0;
-	width: 100%;
+	
 }
 
-#policyStances {
+.stanceNavbar {
 	background-color: white;
     list-style-type: none;
    	overflow: hidden;
 	text-align: center;
-	height: 100%;
+	height: 75px;
 	width: 100%;
 }
 
-#policyStances li {
+.stanceNavbar li {
 	text-align: center;
 	display: inline;
 	height: 75px;
 }
 
-#policyStances li button {
+.stanceNavbar li button {
 	font-size: 25px;
    	font-family: 'Roboto Slab';
 	text-align: center;
@@ -175,7 +172,7 @@ hr {
 	padding: 0em, 1em !important;
 }
 
-#policyStances button:hover {
+.stanceNavbar button:hover {
 	background-color: #efefef;
 }
 
