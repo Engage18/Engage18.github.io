@@ -23,7 +23,7 @@ function SlideshowInstance(imageDiv, leftButton, rightButton) {
 
 function shiftSlide(instance, number) {
 	console.log("Shift slides run");
-	var originalIndex = instance.index;
+	const originalIndex = instance.index;
 	instance.index += number;
 	console.log(instance);
 	console.log(instance.imageArray);
@@ -37,9 +37,9 @@ function initSlides(slideshows) {
 	var instances = [];
 	for(var i=0; i<slideshows.length; i++) {
 		console.log(slideshows[i]);
-		var imageDiv = slideshows[i].querySelector(".imageContainer");
-		var leftButton = slideshows[i].querySelector(".prevButton");
-		var rightButton = slideshows[i].querySelector(".nextButton");
+		const imageDiv = slideshows[i].querySelector(".imageContainer");
+		const leftButton = slideshows[i].querySelector(".prevButton");
+		const rightButton = slideshows[i].querySelector(".nextButton");
 		instances.push(new SlideshowInstance(imageDiv, leftButton, rightButton))
 		console.log(instances[i].imageArray);
 	}
@@ -47,7 +47,7 @@ function initSlides(slideshows) {
 }
 
 $(document).ready(function() {
-	var slideshows = document.getElementsByClassName("slideshowContainer");
+	const slideshows = document.getElementsByClassName("slideshowContainer");
 	$(window).on("load", function() {
 		var instances = initSlides(slideshows);
 		for(var i=0; i<instances.length; i++) {
