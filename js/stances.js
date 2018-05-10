@@ -7,10 +7,12 @@ const stanceDescriptions = document.getElementsByClassName("stanceText");
 function showDescription() {
 	for(var i = 0; i < stanceDescriptions.length; i++) {
 		stanceDescriptions[i].style.display = "none";
-		stanceButtons[i].style.borderBottom = "3px solid red";
+		stanceButtons[i].style.borderBottom = "4px solid red";
 	}
-	buttonMap.get(this).stanceDescription.style.display = "block";
-	this.style.borderBottom = "3 px solid blue";
+	console.log(buttonMap.get(this).stanceDescription);
+	console.log(this);
+	buttonMap.get(this).stanceDescription.style.display = "list-item";
+	this.style.borderBottom = "4px solid blue";
 }
 
 function PolicyPair(stanceButton, stanceDescription) {
@@ -23,5 +25,6 @@ function PolicyPair(stanceButton, stanceDescription) {
 $(document).ready(function() {
 	for(var i = 0; i < stanceButtons.length; i++) {
 		new PolicyPair(stanceButtons[i], stanceDescriptions[i]);
+		stanceDescriptions[i].style.display = "none";
 	}
 })
