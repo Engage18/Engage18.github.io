@@ -292,7 +292,7 @@ hr {
 }
 
 body::-webkit-scrollbar {
-	width: .4em;
+	width: .5em;
 }
  
 body::-webkit-scrollbar-thumb {
