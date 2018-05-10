@@ -58,6 +58,11 @@ h5::selection {
 	background:#ff623f;
 }
 
+.figLink {
+	text-decoration: none;
+	color: #3a3a3a;
+}
+
 figcaption, p {
 	font-family: 'Roboto';
 	font-size: 16px;
