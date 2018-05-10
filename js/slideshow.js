@@ -48,10 +48,14 @@ function initSlides(slideshows) {
 
 $(document).ready(function() {
 	const slideshows = document.getElementsByClassName("slideshowContainer");
+	for(var i=0; i<slideshows.length; i++) {
+		slideshows[i].style.display = "none";
+	}
 	$(window).on("load", function() {
 		var instances = initSlides(slideshows);
 		for(var i=0; i<instances.length; i++) {
 			console.log("Image shown");
+			slideshows[i].style.display = "block";
 			instances[i].imageArray[0].style.display = "block";
 		}
 	})
