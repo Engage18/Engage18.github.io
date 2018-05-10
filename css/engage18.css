@@ -233,6 +233,12 @@ hr {
 	text-align: left;
 }
 
+.widthLimiter h1 {
+	font-size: 25px;
+	font-family: Roboto;
+	text-decoration: none;
+}
+
 .landscapeImage {
 	max-width: 40em;
 }
