@@ -1,12 +1,9 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-input:focus {
-    outline: 0;
-}
-
 button:focus {
 	outline: 0;
+	background-color: #efefef;
 }
 
 body {
@@ -237,7 +234,6 @@ hr {
 
 #thumbnailHolder {
 	text-align: center;
-	padding-bottom: 5em;
 }
 
 #thumbnailHolder figure {
