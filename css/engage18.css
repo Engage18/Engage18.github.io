@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 input:focus {
-    outline:none;
+    outline: 0;
+}
+
+button:focus {
+	outline: 0;
 }
 
 body {
@@ -159,6 +163,7 @@ hr {
 	text-align: center;
 	display: inline;
 	height: 75px;
+	padding: 1px 15px;
 }
 
 .stanceNavbar li button {
@@ -192,7 +197,6 @@ hr {
 .stanceDescriptions {
 	text-decoration: none;
 	list-style: none;
-	display: none;
 }
 
 .stanceDescriptions > li {
@@ -302,6 +306,10 @@ body::-webkit-scrollbar-thumb {
 }
 .nextButton {
   float: right;
+}
+
+#bottomPadder {
+	margin-bottom: 5em;
 }
 
 footer {
